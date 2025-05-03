@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="navbar">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+                    <div class="user-name-mob">
+                        <h6 class="fw-semibold m-0 ps-2 border-start">Ramesh Kumar <span><img
+                                    style="max-width: 16px; margin-left: 8px;" src="images/tick.svg" alt=""></span></h6>
+                    </div>
+                </div>
+                <!-- mobile Menu -->
+                <button class="bg-transparent mobile-menu border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
+                        src="images/menu.svg" alt=""></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header p-0 p-3">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0">
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Address</span>
+                                </div>
+                                <p class="m-0 mt-1 small">Flat No-2, Ganga Block-8, Pocket-D-6, Vasant Kunj, New
+                                    Delhi-110070</p>
+                                <a href="#" class="text-primary small"><u>View Google Map location</u></a>
+                            </div>
+                        </div>
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Office Number</span>
+                                </div>
+                                <a href="#" class="m-0 mt-1 small">+91 9876543211</a>
+                            </div>
+                        </div>
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Email</span>
+                                </div>
+                                <a href="#" class="m-0 mt-1 small">info@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Broker’s Website</span>
+                                </div>
+                                <a href="#" class="m-0 mt-1 small">BrokerWebsite.com</a>
+                            </div>
+                        </div>
+                        <div class="trans-bg border-0">
+                            <div class="social-icons d-flex justify-content-start align-items-center gap-1">
+                                <a href=""><img src="images/share.svg" alt=""></a>
+                                <a href=""><img src="images/facebook-c.svg" alt=""></a>
+                                <a href=""><img src="images/instagram-c.svg" alt=""></a>
+                                <a href=""><img src="images/linkedin-c.svg" alt=""></a>
+                                <a href=""><img src="images/youtube-c.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+
+        <a href="#" class="back-bt mb-3"><i class="bi bi-arrow-left-short"></i> Back</a>
+        <form id="multiStepForm">
+            <!-- Step 1 -->
+            <div class="step active" id="step-1">
+                <h4 class="mb-3 fw-semibold red-link">Step 1: Personal Details</h4>
+                <div class="mb-1">
+                    <label class="mb-2 form-label">Broker's Name</label>
+                    <input class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="mb-1">
+                    <label class="mb-2 form-label">Broker's Age</label>
+                    <input class="form-control" placeholder="Age" name="age">
+                </div>
+                <div class="mb-1">
+                    <label class="mb-2 form-label">Broker's Education</label>
+                    <input class="form-control" placeholder="Education" name="education">
+                </div>
+                <div class="mb-1">
+                    <label class="mb-2 form-label">Residence Colony</label>
+                    <input class="form-control" placeholder="Residence Colony" name="colony">
+                </div>
+                <div class="mb-1">
+                    <label class="mb-2 form-label">About Me</label>
+                    <textarea class="form-control" rows="3" maxlength="200" placeholder="About Me"
+                        name="about"></textarea>
+                </div>
+                <button type="button" class="btn dark-btn next-step mt-3">Next</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" id="step-2">
+                <h4 class="mb-3 fw-semibold red-link">Step 2: Contact Details</h4>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Broker's Email</label>
+                    <input class="form-control" placeholder="Email" name="email">
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Broker's Mobile Number</label>
+                    <input class="form-control" id="mobile" placeholder="Mobile Number" name="mobile">
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Broker's WhatsApp Number</label>
+                    <input class="form-control" id="whatsapp" placeholder="WhatsApp Number" name="whatsapp">
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="sameNumber">
+                    <label class="form-check-label small" for="sameNumber">Mobile & WhatsApp are the same</label>
+                </div>
+                <button type="button" class="btn border-btn prev-step">Back</button>
+                <button type="button" class="btn dark-btn next-step">Next</button>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" id="step-3">
+                <h4 class="mb-3 fw-semibold red-link">Step 3: Work Details</h4>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Company Name</label>
+                    <input class="form-control" placeholder="Company Name">
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Office Address</label>
+                    <textarea class="form-control" rows="2" placeholder="Office Address"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Expertise in Work (Max 6)</label>
+                    <div id="expertiseContainer">
+                        <div class="d-flex align-items-center mb-2">
+                            <input class="form-control" placeholder="Expertise">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-success btn-add"
+                        onclick="addField('expertise', 6)">+</button>
+                </div>
+                <div class="mb-2 d-flex gap-2">
+                    <div class="w-50">
+                        <label class="mb-2 form-label">Min Deal Size</label>
+                        <input class="form-control" placeholder="Min Deal Size">
+                    </div>
+                    <div class="w-50">
+                        <label class="mb-2 form-label">Max Deal Size</label>
+                        <input class="form-control" placeholder="Max Deal Size">
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Colonies/Area where Broker is active (Max 30)</label>
+                    <select class="form-control select2" multiple="multiple" id="colonies"></select>
+                </div>
+                <div class="mb-2">
+                    <label class="mb-2 form-label">Achievements (Max 3)</label>
+                    <div id="achievementsContainer">
+                        <div class="d-flex align-items-center mb-2">
+                            <input class="form-control" placeholder="Achievement">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-success btn-add"
+                        onclick="addField('achievements', 3)">+</button>
+                </div>
+                <button type="button" class="btn border-btn prev-step">Back</button>
+                <button type="button" class="btn dark-btn next-step">Next</button>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step" id="step-4">
+                <h4 class="mb-3 fw-semibold red-link">Step 4: Social Media Details</h4>
+                <div class="mb-2"><input class="form-control" placeholder="Facebook"></div>
+                <div class="mb-2"><input class="form-control" placeholder="LinkedIn"></div>
+                <div class="mb-2"><input class="form-control" placeholder="Instagram"></div>
+                <div class="mb-2"><input class="form-control" placeholder="Facebook"></div>
+                <button type="button" class="btn border-btn prev-step">Back</button>
+                <button type="button" class="btn dark-btn next-step">Next</button>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="step" id="step-5">
+                <h4 class="mb-3 fw-semibold red-link">Step 5: Other Details</h4>
+                <div class="mb-3">
+                    <label class="mb-2 form-label">Broker's Listings / Mandates (Max 10)</label>
+                    <div id="listingsContainer">
+                        <div class="d-flex align-items-center mb-2">
+                            <textarea class="form-control" rows="2" maxlength="200" placeholder="Listing"></textarea>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-success btn-add"
+                        onclick="addField('listings', 10, true)">+</button>
+                </div>
+                <button type="button" class="btn border-btn prev-step">Back</button>
+                <button type="submit" class="btn dark-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="footerSection">
+                <a href="#"><img src="images/logo.svg" alt=""></a>
+                <div class="footer-col">
+                    <div>
+                        <h6>Quick Link</h6>
+                        <div class="footer-list">
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Company</h6>
+                        <div class="footer-list">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white mb-2"><img src="images/red-mail.svg" alt="">
+                            info@broker.page</a>
+                        <a href="#" class="text-white"><img src="images/red-call.svg" alt=""> +91 9876543210</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="m-0">Copyright © 2023 Broker.Page. All rights reserved.</p>
+                <p class="m-0">Reg No. DEL / 1025 / 05 / 2025</p>
+                <div class="social-media d-flex gap-2">
+                    <a href="#"><img src="images/facebook.svg" alt=""></a>
+                    <a href="#"><img src="images/insta.svg" alt=""></a>
+                    <a href="#"><img src="images/twitter.svg" alt=""></a>
+                    <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Toggle Button
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+
+        $(document).ready(function () {
+            let currentStep = 1;
+            const totalSteps = 5;
+
+            $('.next-step').click(function () {
+                if (currentStep < totalSteps) {
+                    $(`#step-${currentStep}`).removeClass('active');
+                    currentStep++;
+                    $(`#step-${currentStep}`).addClass('active');
+                }
+            });
+
+            $('.prev-step').click(function () {
+                if (currentStep > 1) {
+                    $(`#step-${currentStep}`).removeClass('active');
+                    currentStep--;
+                    $(`#step-${currentStep}`).addClass('active');
+                }
+            });
+
+            $('#sameNumber').change(function () {
+                if (this.checked) {
+                    $('#whatsapp').val($('#mobile').val());
+                }
+            });
+
+            $('.select2').select2({
+                maximumSelectionLength: 30,
+                placeholder: 'Select colonies',
+                tags: true,
+                width: '100%'
+            });
+        });
+
+        function addField(type, max, isTextArea = false) {
+            const container = document.getElementById(`${type}Container`);
+            if (container.children.length >= max) return;
+            const wrapper = document.createElement('div');
+            wrapper.className = 'd-flex align-items-center mb-2';
+            const input = document.createElement(isTextArea ? 'textarea' : 'input');
+            input.className = 'form-control';
+            if (isTextArea) input.rows = 2;
+            if (type === 'listings') input.maxLength = 200;
+            const btn = document.createElement('span');
+            btn.innerHTML = '✖';
+            btn.className = 'btn-delete';
+            btn.onclick = () => wrapper.remove();
+            wrapper.appendChild(input);
+            wrapper.appendChild(btn);
+            container.appendChild(wrapper);
+        }
+    </script>
+</body>
+
+</html>

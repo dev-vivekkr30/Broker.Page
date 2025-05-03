@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Broker.Page</title>
+    <!-- BootStrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- bottom Profile CTA Mobile -->
+    <div class="profile-cta-mob">
+        <div class="call-cta d-flex justify-content-start align-items-center gap-2">
+            <a href="#" class="primary-btn"><img class="me-1" src="images/white-call.svg" alt="">
+                Call</a>
+            <a href="#" class="secondary-btn p-0 p-2 d-flex justify-content-center align-items-center me-1"><img
+                    src="images/lined-whatsapp.svg" alt=""></a>
+        </div>
+        <div class="social-icons d-flex justify-content-between align-items-center gap-1">
+            <a href=""><img src="images/share.svg" alt=""></a>
+            <a href=""><img src="images/facebook-c.svg" alt=""></a>
+            <a href=""><img src="images/instagram-c.svg" alt=""></a>
+            <a href=""><img src="images/linkedin-c.svg" alt=""></a>
+            <a href=""><img src="images/youtube-c.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="navbar">
+            <div class="container">
+                <div class="d-flex align-items-center navbar-container">
+                    <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+                    <button type="button" class="border-btn small logout-btn">Logout</button>
+                    <div class="user-name-mob">
+                        <h6 class="fw-semibold m-0 ps-2 border-start">Ramesh Kumar <span><img
+                                    style="max-width: 16px; margin-left: 8px;" src="images/tick.svg" alt=""></span></h6>
+                    </div>
+                </div>
+                <!-- mobile Menu -->
+                <button class="bg-transparent mobile-menu border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
+                        src="images/menu.svg" alt=""></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header p-0 p-3">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0">
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Address</span>
+                                </div>
+                                <p class="m-0 mt-1 small">Flat No-2, Ganga Block-8, Pocket-D-6, Vasant Kunj, New
+                                    Delhi-110070</p>
+                                <a href="#" class="text-primary small"><u>View Google Map location</u></a>
+                            </div>
+                        </div>
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Office Number</span>
+                                </div>
+                                <a href="#" class="m-0 mt-1 small">+91 9876543211</a>
+                            </div>
+                        </div>
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Email</span>
+                                </div>
+                                <a href="#" class="m-0 mt-1 small">info@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="trans-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Broker’s Website</span>
+                                </div>
+                                <a href="#" class="m-0 mt-1 small">BrokerWebsite.com</a>
+                            </div>
+                        </div>
+                        <div class="trans-bg border-0">
+                            <div class="social-icons d-flex justify-content-start align-items-center gap-1">
+                                <a href=""><img src="images/share.svg" alt=""></a>
+                                <a href=""><img src="images/facebook-c.svg" alt=""></a>
+                                <a href=""><img src="images/instagram-c.svg" alt=""></a>
+                                <a href=""><img src="images/linkedin-c.svg" alt=""></a>
+                                <a href=""><img src="images/youtube-c.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-footer p-4">
+                        <a href="#" class="red-link"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="profile-row-mob">
+            <div class="trans-bg m-0 border-0"></div>
+            <div style="position: relative;">
+                <img class="profile-tick" src="images/not_verified.svg" alt="">
+                <div class="profile-photo">
+                    <img src="images/userDefaultimage.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Profile Page Section -->
+        <div class="container">
+
+            <div class="row mt-4">
+                <div class="col-md-5 profile-col">
+                    <div class="profile-left">
+                        <div class="profile-photo-thumbnail">
+                            <img src="images/userDefaultimage.svg" alt="">
+                            <img class="verifed-badge" src="images/not-verified-badge.svg" alt="">
+                        </div>
+                        <div class="profile-cta d-flex justify-content-between align-items-center mt-3">
+                            <div class="call-cta d-flex justify-content-start align-items-center gap-2">
+                                <a href="#" class="primary-btn"><img class="me-1" src="images/white-call.svg" alt="">+91
+                                    9876543211</a>
+                                <a href="#"
+                                    class="secondary-btn p-0 p-2 d-flex justify-content-center align-items-center me-1"><img
+                                        src="images/lined-whatsapp.svg" alt=""></a>
+                            </div>
+                            <!-- <div class="social-icons d-flex justify-content-between align-items-center gap-1">
+                                <a href=""><img src="images/share.svg" alt=""></a>
+                                <a href=""><img src="images/facebook-c.svg" alt=""></a>
+                                <a href=""><img src="images/instagram-c.svg" alt=""></a>
+                                <a href=""><img src="images/linkedin-c.svg" alt=""></a>
+                                <a href=""><img src="images/youtube-c.svg" alt=""></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="profile-right">
+                        <div class="complete-profile-bar mb-3" id="profileBar">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Left: Percentage Section -->
+                                <div id="percentageSection">
+                                    <p class="profile-percentage m-0" id="profilePercent">10%</p>
+                                    <p class="m-0 small">of your profile is complete!</p>
+                                </div>
+
+                                <!-- Right: Message and Button -->
+                                <div id="messagewithButton">
+                                    <div>
+                                        <p class="m-0 fw-semibold" id="profileMessage">Complete your profile to get more
+                                            leads</p>
+                                        <p class="small m-0 fw-light" id="profileSubMessage">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.</p>
+                                    </div>
+                                    <a class="dark-btn mt-2" style="width: fit-content; padding: 8px 16px;"
+                                        href="editProfile.html" id="editProfileBtn">
+                                        <i class="bi bi-pen"></i> Complete Your Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            // Function to update profile bar
+                            function updateProfileBar(percentage) {
+                                const percentageSection = document.getElementById('percentageSection');
+                                const profilePercent = document.getElementById('profilePercent');
+                                const profileMessage = document.getElementById('profileMessage');
+                                const profileSubMessage = document.getElementById('profileSubMessage');
+                                const editProfileBtn = document.getElementById('editProfileBtn');
+                                const messagewithButton = document.getElementById('messagewithButton');
+
+                                if (percentage >= 100) {
+                                    // Hide percentage section
+                                    percentageSection.style.display = 'none';
+                                    messagewithButton.classList.add('d-flex');
+                                    messagewithButton.classList.add('justify-content-between');
+                                    messagewithButton.classList.add('w-100');
+                                    editProfileBtn.classList.remove('mt-2');
+                                    // Change message and button text
+                                    profileMessage.innerText = 'Your profile is complete!';
+                                    profileSubMessage.innerText = 'You can still edit your profile anytime.';
+                                    editProfileBtn.innerHTML = '<i class="bi bi-pen"></i> Edit Your Profile';
+                                } else {
+                                    // Show percentage section
+                                    percentageSection.style.display = 'block';
+                                    profilePercent.innerText = `${percentage}%`;
+
+                                    // Default message
+                                    profileMessage.innerText = 'Complete your profile to get more views';
+                                    profileSubMessage.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+                                    editProfileBtn.innerHTML = '<i class="bi bi-pen"></i> Complete Your Profile';
+                                }
+                            }
+
+                            // Example usage
+                            updateProfileBar(10); // you can dynamically pass 10, 50, 100, etc.
+                            // updateProfileBar(100); // try this to see the 100% state
+                        </script>
+
+
+                        <div class="blue-bg user-name-card">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/user.svg" alt="">
+                                    <span>Name</span>
+                                </div>
+                                <h4 class="m-0 fw-bold mt-1">Ramesh Kumar</h4>
+                            </div>
+                            <img class="verifed-icon" src="images/not_verified.svg" alt="">
+                        </div>
+                        <div class="blue-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Company Name</span>
+                                </div>
+                                <p class="m-0 mt-1">Modern Home Real Estate Agency</p>
+                            </div>
+                            <img class="verifed-icon" src="images/not_verified.svg" alt="">
+                        </div>
+                        <div class="row">
+                            <!-- <div class="col-md-6">
+                                <div class="blue-bg">
+                                    <div class="user-name">
+                                        <div class="label">
+                                            <img src="images/company-icon.svg" alt="">
+                                            <span>Age</span>
+                                        </div>
+                                        <p class="m-0 mt-1">34 Years</p>
+                                    </div>
+                                    <img class="verifed-icon" src="images/tick.svg" alt="">
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-md-6">
+                                <div class="blue-bg">
+                                    <div class="user-name">
+                                        <div class="label">
+                                            <img src="images/company-icon.svg" alt="">
+                                            <span>Education</span>
+                                        </div>
+                                        <p class="m-0 mt-1">Graduate, 2012</p>
+                                    </div>
+                                    <img class="verifed-icon" src="images/tick.svg" alt="">
+                                </div>
+                            </div> -->
+                            <div class="col-md-6">
+                                <div class="blue-bg">
+                                    <div class="user-name">
+                                        <div class="label">
+                                            <img src="images/company-icon.svg" alt="">
+                                            <span>Office Address</span>
+                                        </div>
+                                        <p class="m-0 mt-1 small">Kala Malhotra Property Dealer, Ganga Block-8,
+                                            Pocket-D-6,
+                                            Vasant Kunj, New Delhi-110070</p>
+                                    </div>
+                                    <img class="verifed-icon" src="images/not_verified.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="blue-bg">
+                                    <div class="user-name">
+                                        <div class="label">
+                                            <img src="images/company-icon.svg" alt="">
+                                            <span>Residence Colony</span>
+                                        </div>
+                                        <p class="m-0 mt-1 small">Flat No-2, Ganga Block-8, Pocket-D-6, Vasant Kunj, New
+                                            Delhi-110070
+                                        </p>
+                                    </div>
+                                    <img class="verifed-icon" src="images/not_verified.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="other-details mt-2">
+                <div class="gray-bg">
+                    <div class="user-name">
+                        <div class="label">
+                            <img src="images/company-icon.svg" alt="">
+                            <span>About Me</span>
+                        </div>
+                        <p class="m-0 mt-1 small">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="gray-bg">
+                    <div class="user-name">
+                        <div class="label">
+                            <img src="images/company-icon.svg" alt="">
+                            <span>Expertise</span>
+                        </div>
+                        <div class="m-0 mt-2 tags-list">
+                            <span class="tag">Renting</span>
+                            <span class="tag">Sales</span>
+                            <span class="tag">Purchase</span>
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Documentations</span>
+                            <span class="tag">Etc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="gray-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Average Deal Size</span>
+                                </div>
+                                <p class="m-0 mt-1">1 Cr to 10Cr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gray-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Average Deal Size</span>
+                                </div>
+                                <p class="m-0 mt-1">1 Cr to 10Cr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gray-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Average Deal Size</span>
+                                </div>
+                                <p class="m-0 mt-1">1 Cr to 10Cr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="gray-bg">
+                            <div class="user-name">
+                                <div class="label">
+                                    <img src="images/company-icon.svg" alt="">
+                                    <span>Average Deal Size</span>
+                                </div>
+                                <p class="m-0 mt-1">1 Cr to 10Cr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-bg">
+                    <div class="user-name">
+                        <div class="label">
+                            <img src="images/company-icon.svg" alt="">
+                            <span>Broker's Listings / Mandates</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+        <!-- Footer Section -->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="footerSection">
+                    <a href="#"><img src="images/logo.svg" alt=""></a>
+                    <div class="footer-col">
+                        <div>
+                            <h6>Quick Link</h6>
+                            <div class="footer-list">
+                                <a href="#">About</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Company</h6>
+                            <div class="footer-list">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms & Conditions</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="text-white mb-2"><img src="images/red-mail.svg" alt="">
+                                info@broker.page</a>
+                            <a href="#" class="text-white"><img src="images/red-call.svg" alt=""> +91 9876543210</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="m-0">Copyright © 2023 Broker.Page. All rights reserved.</p>
+                    <p class="m-0">Reg No. DEL / 1025 / 05 / 2025</p>
+                    <div class="social-media d-flex gap-2">
+                        <a href="#"><img src="images/facebook.svg" alt=""></a>
+                        <a href="#"><img src="images/insta.svg" alt=""></a>
+                        <a href="#"><img src="images/twitter.svg" alt=""></a>
+                        <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
