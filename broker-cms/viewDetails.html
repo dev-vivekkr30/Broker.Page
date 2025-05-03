@@ -77,7 +77,10 @@
                                         <th>Broker's Profile Photo</th>
                                         <td>
                                             <div class="d-flex gap-2 align-items-start">
-                                                <a data-fancybox="gallery" href="images/userDefaultimage.svg">
+                                                <a data-fancybox="gallery" class="user-image position-relative" href="images/userDefaultimage.svg">
+                                                    <div class="overlay">
+                                                        <i class="bi bi-zoom-in"></i>
+                                                    </div>
                                                     <img class="w-100 profilePic" src="images/userDefaultimage.svg"
                                                         alt="" style="border-radius:6px;" />
                                                 </a>
@@ -196,10 +199,13 @@
                                     <tr>
                                         <th>Broker's Video</th>
                                         <td>
-                                            <img src="https://images.pexels.com/photos/949193/pexels-photo-949193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="Video Thumbnail" class="img-fluid rounded shadow-sm"
-                                                data-bs-toggle="modal" data-bs-target="#videoModal"
-                                                style="cursor:pointer; max-width: 120px;">
+                                            <div class="position-relative" style="max-width: 120px;">
+                                                <div class="overlay" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                    <i class="bi bi-play-circle"></i>
+                                                </div>
+                                                <img src="https://images.pexels.com/photos/949193/pexels-photo-949193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                                    alt="Video Thumbnail" class="img-fluid rounded shadow-sm" style="cursor:pointer; max-width: 120px;">
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>

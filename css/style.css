@@ -175,7 +175,7 @@ a {
 }
 
 .heroSection {
-    background-image: url('/images/header-bg.svg');
+    background-image: url('../images/header-bg.svg');
     padding: 64px;
     border-radius: 16px;
     background-position: bottom;
