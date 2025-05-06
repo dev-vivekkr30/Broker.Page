@@ -37,7 +37,11 @@ function addField(type, max, isTextArea = false) {
 
     const input = document.createElement(isTextArea ? 'textarea' : 'input');
     input.className = 'form-control';
-    if (isTextArea) input.rows = 2;
+    if (isTextArea) {
+        input.rows = 2;
+        input.classList.add('textarea-control');
+        input.classList.remove('form-control');
+    }
     if (type === 'listings') input.maxLength = 200;
 
     const btn = document.createElement('span');
