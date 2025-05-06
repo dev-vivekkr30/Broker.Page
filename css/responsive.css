@@ -228,6 +228,7 @@
     .form-section {
         padding: 0px;
         margin: auto;
+        width: 100% !important;
         justify-content: center;
         align-items: center;
     }
