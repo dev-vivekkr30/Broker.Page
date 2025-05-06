@@ -81,6 +81,13 @@
     .content {
         margin-left: 56px !important;
     }
+    .register-screen{
+        width: 100%;
+        height: 100% !important;
+    }
+    .form-section{
+        height: 100% !important;
+    }
 }
 
 @media only screen and (max-width:772px) {
@@ -177,7 +184,8 @@
         justify-content: start !important;
     }
     .register-form{
-        padding: 0px 32px 0px 42px;
+        padding: 32px !important;
+        width: 100% !important;
     }
 
 }
