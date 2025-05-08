@@ -58,6 +58,7 @@
 
                 <div class="dataOverviewSection mt-3">
                     <div class="dataOverview mt-3">
+                        <a href="dashboard.html" class="backBtn mb-3"> <i class="bi bi-arrow-left me-2"></i>Back</a>
                         <div class="table-responsive">
                             <p class="mb-2 fw-bold text-danger w-100 pb-1 border-bottom border-muted">Broker Details</p>
                             <table class="table table-borderless">
@@ -141,7 +142,7 @@
                                     </tr>
                                     <tr>
                                         <th>Office Address</th>
-                                        <td><textarea name="" class="form-control"
+                                        <td><textarea name="" class="textarea-control"
                                                 id="">Kala Malhotra Property Dealer, Ganga Block-8, Pocket-D-6, Vasant Kunj, New Delhi-110070</textarea>
                                         </td>
                                         <td style="float: right !important;">
@@ -161,23 +162,26 @@
                             <table class="table table-borderless">
                                 <tbody>
                                     <tr>
-                                        <th>About Me</th>
-                                        <td><textarea name="" class="form-control"
+                                        <th style="width: 34%; vertical-align: top;">About Me</th>
+                                        <td><textarea name="" class="textarea-control"
                                                 id="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae debitis atque aspernatur quibusdam officia commodi optio reiciendis vel nobis neque porro sed earum, possimus, error ipsam quam harum quasi? Magnam.</textarea>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th class="w-25">Mobile Number & WhatsApp Number</th>
+                                        <th>Mobile Number</th>
                                         <td>
-                                            <div class="d-flex gap-2">
-                                                <div class="input-group social-media-input border-0 flex-nowrap">
-                                                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                                    <input type="text" class="form-control" placeholder="Mobile Number" value="+91 9876543210">
-                                                </div>
-                                                <div class="input-group social-media-input border-0 flex-nowrap">
-                                                    <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
-                                                    <input type="text" class="form-control" placeholder="WhatsApp Number" value="+91 9876543210">
-                                                </div>
+                                            <div class="input-group social-media-input border-0 flex-nowrap">
+                                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                                <input type="text" class="form-control" placeholder="Mobile Number" value="+91 9876543210">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>WhatsApp Number</th>
+                                        <td>
+                                            <div class="input-group social-media-input border-0 w-100 flex-nowrap">
+                                                <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
+                                                <input type="text" class="form-control w-100" placeholder="WhatsApp Number" value="+91 9876543210">
                                             </div>
                                         </td>
                                     </tr>
@@ -191,13 +195,13 @@
                                     <tr>
                                         <th class="w-25">Google Map URL</th>
                                         <td>
-                                            <textarea name="Google Map URL" class="form-control" id="googleMapUrl"
+                                            <textarea name="Google Map URL" class="textarea-control" id="googleMapUrl"
                                                 placeholder="Google Map URL"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8344626344383!2d77.06614577517847!3d28.60474248534267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b3212a503c5%3A0xa04ddde473cde65b!2s60%20Feet%20Rd%2C%20Mahavir%20Enclave%20Part%203%2C%20Mahavir%20Enclave%2C%20Delhi!5e0!3m2!1sen!2sin!4v1745916253155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </textarea>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Broker's Video</th>
+                                        <th>Video</th>
                                         <td>
                                             <div class="position-relative" style="max-width: 120px;">
                                                 <div class="overlay" data-bs-toggle="modal" data-bs-target="#videoModal">
@@ -233,7 +237,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th class="w-25">Broker’s Website</th>
+                                        <th class="w-25">Website</th>
                                         <td>
                                             <input type="text" name="" id="" class="form-control w-100"
                                                 placeholder="Enter Broker’s Website" value="https://ramesh.com">
@@ -267,7 +271,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th class="w-25">Colonies/ Area where Broker is active</th>
+                                        <th class="w-25">Colonies/ Area</th>
                                         <td>
                                             <div>
                                                 <select class="form-control select2" multiple="multiple" id="colonies">
@@ -292,7 +296,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th class="w-25">Achievements of Broker in any other field</th>
+                                        <th class="w-25">Achievements</th>
                                         <td>
                                             <input type="text" name="" id="" class="form-control w-100"
                                                 placeholder="Enter Achievements of Broker in any other field"
@@ -302,21 +306,21 @@
                                     <tr>
                                         <th class="w-25">Listings / Mandates (Max 10)</th>
                                         <td>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
-                                            <textarea name="Listings / Mandates" class="form-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                            <textarea name="Listings / Mandates" class="textarea-control mb-2" id="mandatesListings" placeholder="Listings / Mandates">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
                                             </textarea>
                                         </td>
                                     </tr>

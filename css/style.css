@@ -335,7 +335,6 @@ footer .copyright .social-media a{
 }
 
 /* Lisitng Page */
-
 .modify-search-section .search-section{
     display: flex;
     flex-direction: column;
@@ -347,32 +346,45 @@ footer .copyright .social-media a{
     padding: 24px;
     border-radius: 12px;
 }
-
 .modify-search-section .search-section .toggle-btn-section{
     margin: 0px;
 }
 .modify-search-section .search-section .search-bar{
-    margin: 0px;
+    max-width: 100%;
     width: 100%;
     border: 2px solid var(--red-500);
 }
+.modify-search-section .search-section .search-bar .input-group .modify-search-input{
+    max-width: 100% !important;
+    font-weight: 600;
+}
+/* 
 .modify-search-section .search-section .search-bar .input-group .search-input{
     width: 90% !important;
     max-width: 100% !important;
     font-weight: 600;
-}
+} */
 
 .listings{
     margin-top: 32px;
 }
 
+.listings .result-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: start;
+    align-items: center;
+}
+
 .profile-card{
+    max-width:32%;
     width: 100%;
     background-color: var(--surface-50);
     border-radius: 12px;
     padding: 18px;
     border: 1px solid var(--surface-400);
-    margin-top: 24px;
 }
 
 .profile-card .card-head{
@@ -545,6 +557,7 @@ footer .copyright .social-media a{
     flex-direction: row-reverse;
     box-shadow: var(--shadow);
     display: none;
+    z-index: 999;
     transition: all ease-in 0.5s;
 }
 .mobile-menu{
@@ -750,7 +763,7 @@ textarea {
     bottom: 0px;
     width: 45px;
     height: 45px;
-    border: 1px solid var(--surface-500)!important;
+    border: 1px solid var(--surface-500);
     border-radius: 4px;
     border-left: 0px !important;
     border-top-left-radius: 0px !important;
@@ -921,4 +934,11 @@ textarea {
 }
 .textarea-group .textarea-control:focus-visible{
     outline: none;
+}
+
+.tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
 }

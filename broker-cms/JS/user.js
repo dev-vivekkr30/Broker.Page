@@ -90,10 +90,6 @@ function resetFilters(event) {
   }
 }
 
-
-
-
-
 const toggleSwitches = document.querySelectorAll('.toggle-switch');
 
 toggleSwitches.forEach(toggleSwitch => {
@@ -143,3 +139,24 @@ togglePasswordButtons.forEach(button => {
     });
 });
 
+
+
+// Upload file name 
+
+const fileInput = document.getElementById('file-input');
+const fileNamesDiv = document.getElementById('file-names');
+
+fileInput.addEventListener('change', function () {
+    fileNamesDiv.innerHTML = ''; // Clear previous
+    const files = Array.from(fileInput.files);
+
+    if (files.length === 0) {
+        fileNamesDiv.textContent = 'No file selected';
+    } else {
+        files.forEach(file => {
+            const div = document.createElement('div');
+            div.textContent = `📄 ${file.name}`;
+            fileNamesDiv.appendChild(div);
+        });
+    }
+});

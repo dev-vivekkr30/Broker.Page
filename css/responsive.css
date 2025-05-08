@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1400px) {
+    .profile-card{
+        max-width: 48.5% !important;
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .profile-cta {
         flex-direction: column !important;
@@ -88,6 +94,10 @@
     .form-section{
         height: 100% !important;
     }
+    .profile-card{
+        max-width: 100% !important;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:772px) {
@@ -95,6 +105,12 @@
         display: none !important;
     }
 
+    .message-section{
+        padding: 32px !important;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+    }
     .user-name-card {
         display: none !important;
     }
@@ -186,6 +202,12 @@
     .register-form{
         padding: 32px !important;
         width: 100% !important;
+    }
+    .form-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -300,5 +322,25 @@
         padding: 12px 2px;
         font-size: 12px;
         width: 100%;
+    }
+
+    .modify-search-section .search-section{
+        padding: 14px !important;
+    }
+    .modify-search-section .search-section .toggle-btn-section .toggle-btn{
+        font-size: 14px !important;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    .social-icons a img{
+        max-width: 24px !important;
+    }
+    .profile-card{
+        padding: 12px !important;
+    }
+    .card-btn .primary-btn, .card-btn .secondary-btn{
+        font-size: 12px;
     }
 }

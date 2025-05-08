@@ -23,7 +23,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="images/menu.svg" alt="">
                 </button> -->
-                <button class="login-mob-btn"><img src="images/login.svg" alt=""> Login</button>
+                <a href="login.html" class="login-mob-btn"><img src="images/login.svg" alt=""> Login</a>
                 <div class="collapse navbar-collapse me-auto" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -50,14 +50,31 @@
                         <i class="bi bi-geo-alt-fill" style="font-size: 15px; margin-right: 2px;"></i> Colony
                     </button>
                 </div>
-                <div class="search-bar">
+                <!-- <div class="search-bar">
                     <div class="input-group">
                         <span class="input-group-text"><img src="images/search.svg" alt=""></span>
                         <input type="text" class="form-control search-input" placeholder="Search"
                             aria-label="Amount (to the nearest dollar)">
-                        <button class="input-group-text search-btn">Search</button>
+                        <button class="input-group-text search-btn" id="searchBtn">Search</button>
+                    </div>
+                </div> -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <img src="images/search.svg" alt="">
+                        </span>
+                        <input type="text" class="form-control search-input" placeholder="Search" aria-label="Amount (to the nearest dollar)">
+                        
+                        <!-- Search button with responsive content -->
+                        <button class="input-group-text search-btn" id="searchBtn">
+                            <!-- Icon for mobile (visible only on small screens) -->
+                            <i class="bi bi-search d-block d-sm-none"></i>
+                            <!-- Text for desktop (hidden on small screens) -->
+                            <span class="d-none d-sm-inline">Search</span>
+                        </button>
                     </div>
                 </div>
+                
             </div>
         </header>
 

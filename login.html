@@ -25,38 +25,45 @@
             </div>
             <div class="col-md-7 register-form">
                 <div class="form-section w-75">
-                    <img src="images/logo.svg" class="mb-4" alt="">
-                    <h4 class="fw-semibold">Welcome Back!</h4>
-                    <p>Login to your account</p>
                     <div class="row w-100">
-                        <div class="col-md-12 px-0 form-field">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Agent Email">
-                            </div>
+                        <div class="col-md-12 px-0 form-heading">
+                            <img src="images/logo.svg" class="mb-4" alt="">
+                            <h4 class="fw-semibold">Welcome Back!</h4>
+                            <p>Login to your account</p>
                         </div>
+                        
+<form action="" class="px-0 needs-validation" id="login-form" novalidate>
+    <div class="col-md-12 px-0 form-field">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1"
+                placeholder="Agent Email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+    </div>
 
-                        <div class="col-md-12 px-0 form-field">
-                            <div class="mb-3 position-relative">
-                                <label for="create-password" class="form-label">Password</label>
-                                <div class="d-flex w-100 justify-content-between align-items-start">
-                                    <div class="w-100">
-                                        <input type="password" class="form-control password-group" id="create-password"
-                                            name="password" placeholder="Enter Password">
-                                    </div>
-                                    <button class="btn bg-transparent password-group-btn border-0 toggle-password"
-                                        type="button" data-target="create-password">
-                                        <i class="bi bi-eye-slash"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="forgetPassword.html" class="red-link small mb-2 px-0 text-decoration-underline text-end">Forget Password</a>
-                        <a class="dark-btn mb-3" aria-current="page" href="#">Login</a>
-                        <!-- <div class="d-flex form-btns justify-content-between w-100 btn-row">
-                            
-                        </div> -->
+    <div class="col-md-12 px-0 form-field">
+        <div class="mb-3 position-relative">
+            <label for="create-password" class="form-label">Password</label>
+            <div class="d-flex w-100 justify-content-between align-items-start">
+                <div class="w-100">
+                    <input type="password" class="form-control password-group"
+                        id="create-password" name="password" placeholder="Enter Password" required minlength="6">
+                    <div class="invalid-feedback">Password must be at least 6 characters.</div>
+                </div>
+                <button class="btn bg-transparent password-group-btn toggle-password"
+                    type="button" data-target="create-password" id="eye-btn">
+                    <i class="bi bi-eye-slash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <a href="forgetPassword.html"
+        class="red-link small mb-2 px-0 text-decoration-underline text-end">Forget Password</a>
+    <button type="submit" class="dark-btn w-100 mb-3">Login</button>
+</form>
+                        
                     </div>
 
 
@@ -73,6 +80,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/password.js"></script>
+    <script>
+        (function () {
+          'use strict';
+          const form = document.getElementById('login-form');
+          const eyeBtn = document.getElementById('eye-btn');
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+              eyeBtn.style.borderColor = '#dc3545';
+            }
+            form.classList.add('was-validated');
+          });
+        })();
+      </script>
 </body>
 
 </html>

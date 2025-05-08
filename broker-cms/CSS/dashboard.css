@@ -1,4 +1,5 @@
 @import url(designSystem.css);
+@import url(alertsmsg.css);
 .info-tabs{
     padding: 16px;
     display: flex;

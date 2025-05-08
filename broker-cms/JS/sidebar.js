@@ -18,7 +18,7 @@ class CustomSidebar extends HTMLElement {
                                     <li><a href="ColoniesArea.html"><span class="text">Colonies/Area</span></a></li>
                                 </ul>
                             </li>
-                            <li><a href="report.html"><i class="bi bi-database"></i></i><span class="text">Reports</span></a></li>
+                            <li><a href="report.html"><i class="bi bi-file-earmark-bar-graph"></i><span class="text">Reports</span></a></li>
                             
                         </ul>
                     </div>

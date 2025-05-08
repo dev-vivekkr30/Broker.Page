@@ -745,7 +745,6 @@ textarea.form-control {
 }
 
 .social-media-input{
-    width: 417px !important;
     height: 40px !important;
 }
 
@@ -768,4 +767,67 @@ textarea.form-control {
     border-radius: 6px;
     color: var(--white);
     cursor: pointer;
+}
+
+
+.textarea-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea-control{
+    border: 1px solid var(--p50);
+    border-radius: 6px;
+    padding: 8px;
+    resize: none !important;
+    font-size: 14px;
+    height: 100px;   
+    width: 100%;
+}
+
+.textarea-control::placeholder{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--dark-300);
+}
+.textarea-control:focus-visible{
+    outline: none;
+}
+
+/* File Uplaod Popup */
+
+.upload-container {
+    border: 2px dashed #dbdbdb;
+    border-radius: 12px;
+    padding: 20px 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.upload-icon {
+    font-size: 48px;
+    color: #f54c4c;
+    margin-bottom: 20px;
+}
+
+.btn-upload {
+    background-color: var(--p500);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.format-badge {
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+#file-input {
+    display: none;
 }

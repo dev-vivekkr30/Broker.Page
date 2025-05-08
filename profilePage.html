@@ -11,6 +11,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        table td{
+            background-color: transparent !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,6 +33,22 @@
             <a href=""><img src="images/instagram-c.svg" alt=""></a>
             <a href=""><img src="images/linkedin-c.svg" alt=""></a>
             <a href=""><img src="images/youtube-c.svg" alt=""></a>
+            <a href="#"><img src="images/videosvg.svg" data-bs-toggle="modal" data-bs-target="#videoModal" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog bg-transparent border-0">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body border-0">
+                <video width="100%" style="border-radius: 16px;" height="auto" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -56,7 +77,7 @@
                         <div class="trans-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-building-fill"></i>
                                     <span>Address</span>
                                 </div>
                                 <p class="m-0 mt-1 small">Flat No-2, Ganga Block-8, Pocket-D-6, Vasant Kunj, New
@@ -67,7 +88,7 @@
                         <div class="trans-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-telephone-fill"></i>
                                     <span>Office Number</span>
                                 </div>
                                 <a href="#" class="m-0 mt-1 small">+91 9876543211</a>
@@ -76,7 +97,7 @@
                         <div class="trans-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-envelope-paper-fill"></i>
                                     <span>Email</span>
                                 </div>
                                 <a href="#" class="m-0 mt-1 small">info@gmail.com</a>
@@ -85,7 +106,7 @@
                         <div class="trans-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-globe"></i>
                                     <span>Broker’s Website</span>
                                 </div>
                                 <a href="#" class="m-0 mt-1 small">BrokerWebsite.com</a>
@@ -121,10 +142,32 @@
             <div class="row mt-4">
                 <div class="col-md-5 profile-col">
                     <div class="profile-left">
-                        <div class="profile-photo-thumbnail">
-                            <img src="images/photo.jpg" alt="">
-                            <img class="verifed-badge" src="images/verifed-badge.svg" alt="">
-                        </div>
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="profile-photo-thumbnail">
+                                    <img src="images/photo.jpg" alt="">
+                                    <img class="verifed-badge" src="images/verifed-badge.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <video width="100%" style="border-radius: 16px;" height="auto" controls>
+                                    <source src="video.mp4" type="video/mp4">
+                                    <source src="video.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        
                         <div class="profile-cta d-flex justify-content-between align-items-center mt-3">
                             <div class="call-cta d-flex justify-content-start align-items-center gap-2">
                                 <a href="#" class="primary-btn"><img class="me-1" src="images/white-call.svg" alt="">+91
@@ -148,7 +191,7 @@
                         <div class="blue-bg user-name-card">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/user.svg" alt="">
+                                    <i class="bi bi-person-fill"></i>
                                     <span>Name</span>
                                 </div>
                                 <h4 class="m-0 fw-bold mt-1">Ramesh Kumar</h4>
@@ -158,7 +201,7 @@
                         <div class="blue-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-building-fill"></i>
                                     <span>Company Name</span>
                                 </div>
                                 <p class="m-0 mt-1">Modern Home Real Estate Agency</p>
@@ -170,7 +213,7 @@
                                 <div class="blue-bg">
                                     <div class="user-name">
                                         <div class="label">
-                                            <img src="images/company-icon.svg" alt="">
+                                            <i class="bi bi-person-arms-up"></i>
                                             <span>Age</span>
                                         </div>
                                         <p class="m-0 mt-1">34 Years</p>
@@ -182,7 +225,7 @@
                                 <div class="blue-bg">
                                     <div class="user-name">
                                         <div class="label">
-                                            <img src="images/company-icon.svg" alt="">
+                                            <i class="bi bi-mortarboard-fill"></i>
                                             <span>Education</span>
                                         </div>
                                         <p class="m-0 mt-1">Graduate, 2012</p>
@@ -194,7 +237,7 @@
                                 <div class="blue-bg">
                                     <div class="user-name">
                                         <div class="label">
-                                            <img src="images/company-icon.svg" alt="">
+                                            <i class="bi bi-building-fill"></i>
                                             <span>Office Address</span>
                                         </div>
                                         <p class="m-0 mt-1 small">Kala Malhotra Property Dealer, Ganga Block-8,
@@ -208,7 +251,7 @@
                                 <div class="blue-bg">
                                     <div class="user-name">
                                         <div class="label">
-                                            <img src="images/company-icon.svg" alt="">
+                                            <i class="bi bi-house-fill"></i>
                                             <span>Residence Colony</span>
                                         </div>
                                         <p class="m-0 mt-1 small">Flat No-2, Ganga Block-8, Pocket-D-6, Vasant Kunj, New
@@ -227,7 +270,7 @@
                 <div class="gray-bg">
                     <div class="user-name">
                         <div class="label">
-                            <img src="images/company-icon.svg" alt="">
+                            <i class="bi bi-info-circle-fill"></i>
                             <span>About Me</span>
                         </div>
                         <p class="m-0 mt-1 small">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -241,7 +284,7 @@
                         <div class="gray-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-bookmark-star-fill"></i>
                                     <span>Expertise</span>
                                 </div>
                                 <div class="m-0 mt-2 tags-list">
@@ -259,7 +302,7 @@
                         <div class="gray-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <i class="bi bi-buildings"></i>
+                                    <i class="bi bi-geo-alt-fill"></i>
                                     <span>Colonies/ Area where Broker is active</span>
                                 </div>
                                 <div class="m-0 mt-2 tags-list">
@@ -277,10 +320,10 @@
                         <div class="gray-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
+                                    <i class="bi bi-currency-rupee"></i>
                                     <span>Average Deal Size</span>
                                 </div>
-                                <p class="m-0 mt-1">1 Cr to 10Cr</p>
+                                <p class="m-0 mt-1 small">1 Cr to 10Cr</p>
                             </div>
                         </div>
                     </div>
@@ -291,19 +334,19 @@
                                     <i class="bi bi-globe"></i>
                                     <span>Broker's Website</span>
                                 </div>
-                                <p class="m-0 mt-1">brokerwebsite.com</p>
+                                <p class="m-0 mt-1 small">brokerwebsite.com</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4">
                         <div class="gray-bg">
                             <div class="user-name">
                                 <div class="label">
-                                    <img src="images/company-icon.svg" alt="">
-                                    <span>Average Deal Size</span>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span>Achievements</span>
                                 </div>
-                                <p class="m-0 mt-1">1 Cr to 10Cr</p>
+                                <p class="m-0 mt-1 small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -311,10 +354,28 @@
                 <div class="gray-bg">
                     <div class="user-name">
                         <div class="label">
-                            <img src="images/company-icon.svg" alt="">
+                            <i class="bi bi-list-ul"></i>
                             <span>Broker's Listings / Mandates</span>
                         </div>
+                        <table class="table table-border table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 15%;">S. No</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat fugiat
+                                        consequuntur dolorum corrupti! At, accusantium facilis. Vel quod nisi fuga
+                                        minima, mollitia soluta nam itaque dolore, commodi eveniet cum.
+                                    </td>
+                                </tr>
 
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -53,3 +53,4 @@ function addField(type, max, isTextArea = false) {
     wrapper.appendChild(btn);
     container.appendChild(wrapper);
 }
+
