@@ -54,3 +54,5 @@ function addField(type, max, isTextArea = false) {
     container.appendChild(wrapper);
 }
 
+
+new WOW().init();
